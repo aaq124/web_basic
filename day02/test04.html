@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>인라인 블럭 태그 문법 방법.</title><!-- 인라인 옆에 무언가 가져올순 있지만 영역이 없고,
+ 	블럭은 영역은 있지만 옆에 가져올수는 없음. 인라인 블럭의 두 장점을 합한것!!! -->
+<style type="text/css">
+		.inblock{
+			display: inline-block;
+		}
+
+		.box{
+			width: 200px;
+			height: 200px;
+			border: 1px solid gray;
+			/*
+				border 속성값 순서
+						1px solid gray;
+						1px: 테두리 두깨
+						solid: 테두리 스타일 (dashed, dotted,....)
+						gray: 테두리 색상
+			*/
+		}
+		
+		.ft0{
+			font-size: 0pt;
+		}
+		
+		.ft12{
+			font-size: 12pt;
+		}
+</style>
+</head>
+<body>
+		<div style="text-align: center" class="ft0">
+			<div class="inblock box ft12">divl</div>
+			<div class="inblock box ft12">div2</div>
+			<div class="inblock box ft12">div3</div>
+			<div class="inblock box ft12">div4</div>
+			<div class="inblock box ft12">div5</div>
+		</div>
+</body>
+</html>
