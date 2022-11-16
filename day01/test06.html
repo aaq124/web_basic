@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body> <!-- input문법은 텍스트정보,패스워드,날짜,연락처등 정보 입력받을때 사용!!!
+            input 사용할때는 type을 넣고 사용해야함. 밑을 참조!! set임!!
+               예) <input type= 어쩌구 저쩌구 들어옴.
+            그리고 type 뒤에오는 속성값으로는 <text>는 입력박스생성. <submit>은 버튼.
+            등등 말고도 여러가지 있음.
+             div란 블럭태그문법-->
+    <form method="get" action="test03.html">
+    <div>
+     <label for="id">아 이 디 : </label>
+     <input type="text" id="id" name="id"
+     placeholder="아이디를 입력하세요!" required>
+           <span>인라인태그</span>
+     </div>
+     <div>
+      <label for="pw">비밀번호 : </label>
+      <input type="password" id="pw" name="pw"
+      placeholder="비밀번호를 입력하세요!" required>
+     </div>
+  <div>
+   <input type="button" id="hbtn" value="home">
+   <input type="submit" id="lbtn" value="login">
+  <button type="button" id="lbtn" >회원가입 </button>
+  </div>
+  </form>
+</body>
+</html>
